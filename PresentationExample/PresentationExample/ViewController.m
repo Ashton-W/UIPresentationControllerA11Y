@@ -1,5 +1,4 @@
 #import "ViewController.h"
-#import "PresentationController.h"
 #import "MyAlertViewController.h"
 
 @interface ViewController ()
@@ -18,7 +17,6 @@
 - (IBAction)touchButtonTwo:(id)sender
 {
     MyAlertViewController *alert = [[MyAlertViewController alloc] init];
-    PresentationController *presenter = [[PresentationController alloc] initWithPresentedViewController:alert presentingViewController:self];
     [self presentViewController:alert animated:YES completion:nil];
 }
 
